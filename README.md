@@ -379,4 +379,100 @@ print(soma)  # Saída: 15
 
 ---
 
+# Manipulação de matrizes de inteiros e uso da biblioteca `math` 
+
+---
+
+## 14. Manipulação de Matrizes de Inteiros
+
+### 14.1 Criando Matrizes
+
+```python
+# Matriz manual
+matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# Matriz com zeros
+matriz_zeros = [[0] * 3 for _ in range(3)]
+
+# Matriz identidade
+identidade = [[1 if i == j else 0 for j in range(3)] for i in range(3)]
+```
+
+### 14.2 Acessando Elementos
+
+```python
+# Acessando um elemento
+elemento = matriz[1][2]  # Acesso à linha 1, coluna 2 (valor: 6)
+```
+
+### 14.3 Operações com Matrizes
+
+#### Adição de Matrizes
+
+```python
+def adicionar_matrizes(matriz1, matriz2):
+    resultado = [[matriz1[i][j] + matriz2[i][j] for j in range(len(matriz1[0]))] for i in range(len(matriz1))]
+    return resultado
+
+# Exemplo de uso
+matriz_resultante = adicionar_matrizes(matriz1, matriz2)
+```
+
+#### Multiplicação de Matrizes
+
+```python
+def multiplicar_matrizes(matriz1, matriz2):
+    resultado = [[sum(matriz1[i][k] * matriz2[k][j] for k in range(len(matriz1[0]))) for j in range(len(matriz2[0]))] for i in range(len(matriz1))]
+    return resultado
+
+# Exemplo de uso
+matriz_resultante = multiplicar_matrizes(matriz1, matriz2)
+```
+---
+
+## 15. Uso da Biblioteca `math`
+
+### 15.1 Funções Matemáticas
+
+```python
+import math
+
+# Raiz quadrada
+raiz_quadrada = math.sqrt(16)  # Resultado: 4.0
+
+# Seno de um ângulo em radianos
+seno = math.sin(math.radians(30))  # Resultado: 0.5
+
+# Valor absoluto
+absoluto = math.fabs(-10)  # Resultado: 10.0
+```
+
+### 15.2 Constantes Matemáticas
+
+```python
+# Valor de pi
+pi = math.pi  # Resultado: 3.141592653589793
+
+# Constante de Euler
+euler = math.e  # Resultado: 2.718281828459045
+```
+
+### 15.3 Funções de Arredondamento
+
+```python
+# Arredondar para baixo
+arred_baixo = math.floor(3.7)  # Resultado: 3
+
+# Arredondar para cima
+arred_cima = math.ceil(3.2)  # Resultado: 4
+
+# Arredondar para o inteiro mais próximo
+arred_int = round(3.5)  # Resultado: 4
+```
+---
+
 Este documento cobre a maior parte dos conceitos iniciais, com exemplos práticos para cada um. Estude e pratique esses tópicos para desenvolver uma boa base em Python e estar preparada para resolver problemas mais complexos.
