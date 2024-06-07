@@ -1,4 +1,4 @@
-#Algumas funções básicas e algoritmos de base em Python
+# Algumas funções básicas e algoritmos de base em Python
 
 
 # Guia de Estruturas e Funções em Python
