@@ -264,6 +264,118 @@ grafo = {
 
 print(bfs(grafo, 'A'))  # Saída: {'A', 'B', 'C', 'D', 'E', 'F'}
 ```
+---
+
+# Conceitos de lógica e manipulação de entradas/saídas em Python:
+
+---
+
+## 10. Estruturas de Dados Avançadas
+
+### 10.1 Conjuntos (Sets)
+
+```python
+# Criando um conjunto
+conjunto = {1, 2, 3, 4, 5}
+
+# Adicionando elementos
+conjunto.add(6)
+
+# Removendo elementos
+conjunto.remove(3)
+
+print(conjunto)  # Saída: {1, 2, 4, 5, 6}
+```
+
+### 10.2 Pilhas (Stacks) e Filas (Queues)
+
+```python
+# Pilha usando lista
+pilha = []
+pilha.append(1)
+pilha.append(2)
+pilha.pop()  # Remove o último elemento
+
+# Fila usando deque
+from collections import deque
+fila = deque()
+fila.append(1)
+fila.append(2)
+fila.popleft()  # Remove o primeiro elemento
+
+print(pilha)  # Saída: [1]
+print(fila)   # Saída: deque([2])
+```
+---
+
+## 11. Manipulação Avançada de Strings
+
+### 11.1 Formatação de Strings
+
+```python
+nome = "Ana"
+idade = 30
+print(f"{nome} tem {idade} anos.")  # Saída: Ana tem 30 anos.
+```
+
+### 11.2 Métodos de Strings Avançados
+
+```python
+texto = "Python é uma linguagem de programação poderosa"
+# Encontrar a posição da palavra "linguagem"
+print(texto.find("linguagem"))  # Saída: 14
+
+# Substituir uma palavra por outra
+novo_texto = texto.replace("poderosa", "versátil")
+print(novo_texto)  # Saída: Python é uma linguagem de programação versátil
+```
+---
+
+## 12. Manipulação de Arquivos
+
+### 12.1 Leitura de Arquivos
+
+```python
+with open("arquivo.txt", "r") as arquivo:
+    conteudo = arquivo.read()
+    print(conteudo)
+```
+
+### 12.2 Escrita de Arquivos
+
+```python
+with open("saida.txt", "w") as arquivo:
+    arquivo.write("Escrevendo no arquivo.")
+```
+---
+
+## 13. Funções Lambda e Higher-order Functions
+
+### 13.1 Funções Lambda
+
+```python
+# Função lambda para calcular o quadrado de um número
+quadrado = lambda x: x ** 2
+print(quadrado(5))  # Saída: 25
+```
+
+### 13.2 Map, Filter e Reduce com Funções Lambda
+
+```python
+numeros = [1, 2, 3, 4, 5]
+# Usando map para calcular o cubo de cada número
+cubos = list(map(lambda x: x ** 3, numeros))
+print(cubos)  # Saída: [1, 8, 27, 64, 125]
+
+# Usando filter para filtrar números pares
+pares = list(filter(lambda x: x % 2 == 0, numeros))
+print(pares)  # Saída: [2, 4]
+
+# Usando reduce para somar todos os valores
+from functools import reduce
+soma = reduce(lambda x, y: x + y, numeros)
+print(soma)  # Saída: 15
+```
 
 ---
 
