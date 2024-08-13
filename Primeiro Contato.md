@@ -116,6 +116,8 @@ else:
     print('Estude mais... Estude bem!')
 ```
 
+aqui em [Tipos e Condicionais](https://github.com/Vct-Jully/estudoPython/blob/main/Tipos%20e%20Condicionais.md) você pode ver mais sobre tipos em python e alguns exemplos utilizando estruturas condicionais!
+
 ---
 
 Este material é apenas um pequeno resumo dos conceitos básicos de Python. Recomendamos continuar seus estudos via plataformas especializadas como [DataCamp](https://www.datacamp.com/), [SoloLearn](https://www.sololearn.com/Course/Python/) ou [CodeAcademy](https://www.codecademy.com/learn/learn-python-3), dentre outras disponíveis no mercado. Boa sorte em seu aprendizado!
