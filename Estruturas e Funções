@@ -18,7 +18,7 @@ print(frutas[0])  # Saída: maçã
 print(frutas[1])  # Saída: banana
 ```
 
-### 1.2 Modificando Listas
+### 1.2 Modificando Listas:
 
 ```python
 # Adicionando elementos
