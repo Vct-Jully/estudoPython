@@ -71,33 +71,24 @@ Agora que dominamos melhor as bases, testemos nossos novos conhecimentos com um 
 
 Trata-se da **Sequência Fibonacci**, onde cada termo é obtido somando os dois anteriores. Implemente uma solução em Python que receba um número inteiro positivo `n` e retorne o enésimo termo dessa sequência. Caso o usuário insira um número inválido, informe-o e reinicie a obtenção do dado.
 
-Tentativa de solução:
+Código da Solução:
 
 ```python
-def fibonacci(n: int):
+def calcula_fibonacci():
+    n = int(input('Insira o índice do termo da Sequência de Fibonacci que deseja consultar: '))
+
     if n <= 0:
-        return None
+        print('Índices menores ou iguais a zero não são válidos. Tente novamente.')
+        calcula_fibonacci()
     elif n == 1 or n == 2:
-        return 1
+        print(f'O {n}-ésimo termo da Sequência de Fibonacci vale 1.')
     else:
         a, b = 1, 1
         for _ in range(n - 2):
             a, b = b, a + b
-        return b
+        print(f'O {n}-ésimo termo da Sequência de Fibonacci vale {b}.')
 
-while True:
-    try:
-        numero = abs(int(input('Insira um número natural válido: ')))
-        break
-    except ValueError:
-        print('Entrada Inválida, tente novamente.')
-
-resultado = fibonacci(numero)
-
-if resultado is not None:
-    print(f'O {numero}-ésimo termo da Sequência de Fibonacci é {resultado}.')
-else:
-    print('Entrada inválida, tente um número maior ou igual a 1.')
+calcula_fibonacci()
 ```
 
 ---
