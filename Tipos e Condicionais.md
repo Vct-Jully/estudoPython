@@ -47,29 +47,14 @@ Observe que adicionamos o método `strip()` para remover quaisquer espaços extr
 Finalmente, implementaremos um problema simples referente à fórmula de Pitágoras, aqui receberemos os catetos a e b via input para calcular a hipotenusa de um triângulo:
 
 ```python
-import math
+def calcular_hipotenusa():
+    ca = float(input('Insira o comprimento do cateto a: '))
+    cb = float(input('Insira o comprimento do cateto b: '))
 
-def calcula_hipotenusa(cateto_a: float, cateto_b: float):
-    hipotenusa = round((math.sqrt(cateto_a ** 2 + cateto_b ** 2)), 2)
-    return hipotenusa
+    hipotenusa = (ca ** 2 + cb ** 2) ** 0.5
+    print(f'Hipotenusa: {round(hipotenusa, 2)}')
 
-while True:
-    try:
-        cateto_a = abs(float(input('Insira o comprimento do cateto a: ')))
-        break
-    except ValueError:
-        print('Entrada Inválida, tente novamente.')
-
-while True:
-    try:
-        cateto_b = abs(float(input('Insira o comprimento do cateto b: ')))
-        break
-    except ValueError:
-        print('Entrada Inválida, tente novamente.')
-
-hipotenusa = calcula_hipotenusa(cateto_a, cateto_b)
-
-print(f'O comprimento da hipotenusa é {hipotenusa}.')
+calcular_hipotenusa()
 ```
 
 Nessa última implementação, pedimos ao usuário que insira os valores dos catetos a e b. Após validarmos os dados, calculamos o valor da hipotenusa usando a fórmula de Pitágoras e, por fim, exibimos o resultado formatado. Note que usamos a biblioteca `math` para calcularmos a raiz quadrada, pois esta funcionalidade não está inclusa nativamente na linguagem Python.
