@@ -10,7 +10,7 @@ Bem-vindo ao repositório dedicado aos fundamentos da língua de programação P
 
 
 3. ## [Estruturas e Funções](https://github.com/Vct-Jully/estudoPython/blob/main/Estruturas%20e%20Fun%C3%A7%C3%B5es) não está no escopo do curso python básico
-   Neste módulo, expandiremos seus conhecimentos sobre loops (estruturas de repetição) e funções em Python. Loops são ótimos para iterar sobre conjuntos de dados e executar determinadas tarefas repetidamente. Já funções auxiliam na modularização do código, permitindo sua reutilização. Embora não seja necessário para esta fase inicial de aprendizado, este módulo é altamente recomendado para quem pretende profundizar no uso da linguagem.
+   Neste módulo, expandiremos seus conhecimentos sobre loops (estruturas de repetição) e funções em Python. Loops são ótimos para iterar sobre conjuntos de dados e executar determinadas tarefas repetidamente. Já funções auxiliam na modularização do código, permitindo sua reutilização. Embora não seja necessário para esta fase inicial de aprendizado, este módulo é altamente recomendado para quem pretende se aprofundar no uso da linguagem.
 
    ### Tópicos importantes deste módulo:
    - laços de epetição
