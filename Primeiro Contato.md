@@ -85,7 +85,7 @@ nome = input('Qual é o seu nome?: ')
 idade = int(input('Quantos anos você tem?: '))
 
 # Mostrar resultado
-print(f'{nome}, em {idade} anos voce terá {idade + 10}.')
+print(f'{nome}, em 10 anos voce terá {idade + 10}.')
 ```
 
 Nesse exemplo, perguntamos ao usuário seu nome e idade e exibimos uma mensagem personalizada com a informação fornecida.
