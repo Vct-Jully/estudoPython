@@ -7,8 +7,8 @@ Bem-vindo ao repositório dedicado aos fundamentos da língua de programação P
 
 2. ## [Tipos e Condicionais]
    Neste módulo, você irá conhecer os diferentes tipos de dados em Python, como strings, inteiros, floats e booleanos. Além disso, serão apresentadas as operações aritméticas básicas e a forma correta de declaração das variáveis. Finalmente, serão abordados os conceitos de entrada e saida de dados e a construção de expressoes condicionais.
-   [TIPOS]((https://github.com/Vct-Jully/estudoPython/blob/main/Tipos%20de%20Dados.md))
-   [CONDICIONAIS]((https://github.com/Vct-Jully/estudoPython/blob/main/Condicionais.md))
+   [TIPOS](https://github.com/Vct-Jully/estudoPython/blob/main/Tipos%20de%20Dados.md)
+   [CONDICIONAIS](https://github.com/Vct-Jully/estudoPython/blob/main/Condicionais.md)
 
 
 4. ## [Estruturas e Funções](https://github.com/Vct-Jully/estudoPython/blob/main/Estruturas%20e%20Fun%C3%A7%C3%B5es) não está no escopo do curso python básico
