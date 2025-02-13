@@ -9,6 +9,8 @@ Este é o ambiente onde você encontrará os links para as questões que estamos
 
 ### Questões atuais:
 
+[Questão Acidez de uma solução](https://thehuxley.com/problem/1062)
+
 1. **Questão 1**  
    [Acesse a Questão 1](https://thehuxley.com/problem/42?quizId=9687)
 
